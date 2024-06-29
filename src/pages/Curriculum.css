@@ -37,7 +37,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    width: 50vw;
+    justify-content: left;
 }
 
 .about {
@@ -107,6 +107,7 @@ main {
 .rigth {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     gap: 80px;
 }
 

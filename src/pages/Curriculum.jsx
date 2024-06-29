@@ -80,7 +80,7 @@ function Curriculum() {
 
                     <div className="content">
                         <h3><strong>GitHub:</strong> <a href="https://github.com/Acaua-Rangel/">https://github.com/Acaua-Rangel/</a></h3>
-                        <h3><strong>Telefone:</strong> <a href="tel:+5571981717609">+55 (71) 98171-7609</a></h3>
+                        <h3><strong>Telephone:</strong> <a href="tel:+5571981717609">+55 (71) 98171-7609</a></h3>
                         <h3><strong>E-mail:</strong> <a href="mailto:acauarangel17@gmail.com">acauarangel17@gmail.com</a></h3>
                     </div>
                 </div>
@@ -102,20 +102,20 @@ function Curriculum() {
                 </div>
 
                 <div className="rigth-item">
-                    <h2 className="title">FORMATION</h2>
+                    <h2 className="title">TRAINING</h2>
 
                     <div className="formation">
                         <div className="content">
-                            <h3><strong>Escola SESI Djalma Pessoa</strong></h3>
+                            <h3><strong>SESI Djalma Pessoa School</strong></h3>
                             <h3>Course: <strong>Middle school</strong></h3>
                             <h3>Duration: <strong>2022 - 2024</strong></h3>
-                            <h3>Location: <strong>Salvador - BA</strong></h3>
+                            <h3>Locality: <strong>Salvador - BA</strong></h3>
                         </div>
                         <div className="content">
                             <h3><strong>SENAI Cimatec</strong></h3>
-                            <h3>Curso: <strong>Técnico em Mecatrônica</strong></h3>
-                            <h3>Duração: <strong>2022 - 2024</strong></h3>
-                            <h3>Localidade: <strong>Salvador - BA</strong></h3>
+                            <h3>Course: <strong>Mechatronics Technician</strong></h3>
+                            <h3>Duration: <strong>2022 - 2024</strong></h3>
+                            <h3>Locality: <strong>Salvador - BA</strong></h3>
                         </div>
                     </div>
                 </div>
