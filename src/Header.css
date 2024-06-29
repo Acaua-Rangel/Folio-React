@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.cabecalho {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 30px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    cursor: pointer;
+    transition-duration: 0.4;
+    color: black;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #71C829;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #71C829;
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+}
+
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: black;
+    align-items: center;
+}
+
+@media (max-width: 760px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 100px;
+        right: -300px;
+        width: 200px;
+        height: 200px;
+        background: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #mobile i {
+        font-size: 32px;
+        cursor: pointer;
+    }
+}

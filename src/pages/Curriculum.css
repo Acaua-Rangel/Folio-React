@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    font-size: 100%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.content h3, .last-exp h3{
+    padding-bottom: 5px;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center    ;
+    padding-top: 220px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    gap: 80px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 50vw;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.role {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experiences div h3 a,
+.rigth-item div h3 a {
+    text-decoration: none;
+    color:#71C829;
+}
+
+.title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+}
+.last-exp h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.project-content {
+    padding-left: 20px;
+}
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.rigth-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}.corpo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center    ;
+    padding-top: 220px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    gap: 80px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 50vw;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.role {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+}
+.last-exp h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.project-content {
+    padding-left: 20px;
+}
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.rigth-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
