@@ -70,9 +70,9 @@ function Home() {
                                 <h3>API</h3>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing 
-                                stenetur magnam delectus aperiam et eaque tempore 
-                                dignissimos eos. Enim ?
+                                I can develop your API in a variety of ways, from 
+                                website servers with TCP/IP protocol or socket, to 
+                                game servers with UDP or socket
                             </p>
                         </div>
                         <div>
@@ -81,9 +81,10 @@ function Home() {
                                 <h3>Discord Bots</h3>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing 
-                                stenetur magnam delectus aperiam et eaque tempore 
-                                dignissimos eos. Enim ?
+                            I've been developing Discord bots for 
+                            a few years now, with economy systems, 
+                            music, tts and integration with roblox, 
+                            I can develop the bot you want
                             </p>
                         </div>
                         <div>
@@ -92,9 +93,10 @@ function Home() {
                                 <h3>Website</h3>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing 
-                                stenetur magnam delectus aperiam et eaque tempore 
-                                dignissimos eos. Enim ?
+                            As a Fullstack dev, it is already implicit 
+                            the development of websites, both the front-end 
+                            and back-end, I use the react js library, but I 
+                            have no problem learning a new technology to develop yours
                             </p>
                         </div>
                     </div>
