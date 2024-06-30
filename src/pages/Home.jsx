@@ -93,10 +93,10 @@ function Home() {
                                 <h3>Website</h3>
                             </div>
                             <p>
-                            As a Fullstack dev, it is already implicit 
-                            the development of websites, both the front-end 
-                            and back-end, I use the react js library, but I 
-                            have no problem learning a new technology to develop yours
+                                As a Fullstack dev, it is already 
+                                implicit the development of websites, 
+                                I use the react js library, but I can 
+                                learning a new technology to develop yours
                             </p>
                         </div>
                     </div>
