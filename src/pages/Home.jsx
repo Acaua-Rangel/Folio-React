@@ -1,11 +1,11 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaNetworkWired, FaDiscord, FaReact } from "react-icons/fa";
 import { SiGoogledocs } from "react-icons/si";
 import Header from "../Header"
 import "./Home.css"
 
 function Home() {
     return (
-        <div>
+        <>
             <Header page="Home"/>
             <main>
                 <section className="about-container">
@@ -37,8 +37,71 @@ function Home() {
                     </div>
                 </section>
 
+                <section className="projects">
+                    <h1>PROJECTS</h1>
+                    <div>
+                        <a>
+                            <img src="/Valkyrio.png" alt="Valkyrio bot image" />
+                            <h2>VALKYRIO</h2>
+                            <h3>XP - DISCORD BOT</h3>
+                            <p>INTEGRATION WITH ROBLOX API</p>
+                        </a>
+                        <a href="https://phoenixligajovem.netlify.app/">
+                            <img src="/Phoenix.png" alt="Phoenix website image" />
+                            <h2>PHOENIX</h2>
+                            <h3>REACT WEBSITE</h3>
+                            <p>INTEGRATION WITH GEMINI</p>
+                        </a>
+                        <a href="https://top.gg/bot/921954829352468572">
+                            <img src="/Pitanga.png" alt="Pitanga bot image" />
+                            <h2>PITANGA</h2>
+                            <h3>DISCORD BOT</h3>
+                            <p>MUSIC, TTS, ECONOMY, FUN</p>
+                        </a>
+                    </div>
+                </section>
+
+                <section className="services">
+                    <h1>SERVICES</h1>
+                    <div className="services-container">
+                        <div>
+                            <div>
+                                <FaNetworkWired color="#71C829"/>
+                                <h3>API</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                stenetur magnam delectus aperiam et eaque tempore 
+                                dignissimos eos. Enim ?
+                            </p>
+                        </div>
+                        <div>
+                            <div>
+                                <FaDiscord color="#71C829"/>
+                                <h3>Discord Bots</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                stenetur magnam delectus aperiam et eaque tempore 
+                                dignissimos eos. Enim ?
+                            </p>
+                        </div>
+                        <div>
+                            <div>
+                                <FaReact color="#71C829"/>
+                                <h3>Website</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing 
+                                stenetur magnam delectus aperiam et eaque tempore 
+                                dignissimos eos. Enim ?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
             </main>
-        </div>
+        </>
     )
 }
 
