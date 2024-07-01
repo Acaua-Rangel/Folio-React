@@ -44,7 +44,7 @@ function Curriculum() {
                             providing an AI called Ignis that has access to this information.
                         </h3>
 
-                        <h3>Technologies: <strong>Flutter, Node.js, Crypto, Express, Figma</strong></h3>
+                        <h3>Technologies: <strong>React.js, Gemini API, Node.js, Express</strong></h3>
                     </div>
 
                     <div className="project">
@@ -57,7 +57,7 @@ function Curriculum() {
                             with himself.
                         </h3>
 
-                        <h3>Technologies: <strong>Python, ElevenLabs API, Pillow, SQL, Numpy, Random</strong></h3>
+                        <h3>Technologies: <strong>Python, ElevenLabs API, Pillow, MySQL, Numpy, Lavalink</strong></h3>
                     </div>
 
                     <div className="project">
