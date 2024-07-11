@@ -107,7 +107,7 @@ function Curriculum() {
                     <div className="formation">
                         <div className="content">
                             <h3><strong>SESI Djalma Pessoa School</strong></h3>
-                            <h3>Course: <strong>Middle school</strong></h3>
+                            <h3>Course: <strong>High School</strong></h3>
                             <h3>Duration: <strong>2022 - 2024</strong></h3>
                             <h3>Locality: <strong>Salvador - BA</strong></h3>
                         </div>
