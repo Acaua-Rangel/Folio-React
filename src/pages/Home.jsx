@@ -20,7 +20,7 @@ function Home() {
                             and MySQL databases.
                         </h2>
                         <a href="https://wa.me/5571981717609?text=Estou%20interessado%20em%20seus%20serviços">
-                            <button className="about-button">CONTACT US</button>
+                            <button className="about-button">CONTACT ME</button>
                         </a>
 
                         <div className="hiper-links">
@@ -52,6 +52,12 @@ function Home() {
                             <h3>REACT WEBSITE</h3>
                             <p>INTEGRATION WITH GEMINI</p>
                         </a>
+                        <a href="https://castly.gg/release">
+                            <img src="/Castly.png" alt="Castly website image" />
+                            <h2>CASTLY</h2>
+                            <h3>REACT WEBSITE</h3>
+                            <p>FFMPEG, NGINX RTMP, NODE.JS</p>
+                        </a>
                         <a href="https://top.gg/bot/921954829352468572">
                             <img src="/Pitanga.png" alt="Pitanga bot image" />
                             <h2>PITANGA</h2>
@@ -63,13 +69,13 @@ function Home() {
 
                 <section className="services">
                     <h1>SERVICES</h1>
-                    <div className="services-container">
-                        <div>
-                            <div>
+                    <div className="">
+                        <div className="bg-black/20 w-11/12">
+                            <div className="flex flex-row gap-2 text-xl items-center">
                                 <FaNetworkWired color="#71C829"/>
-                                <h3>API</h3>
+                                <h3 className="text-white">API</h3>
                             </div>
-                            <p>
+                            <p className="text-white opacity-80">
                                 I can develop your API in a variety of ways, from 
                                 website servers with TCP/IP protocol or socket, to 
                                 game servers with UDP or socket
@@ -103,6 +109,25 @@ function Home() {
                 </section>
 
             </main>
+            <footer className="flex flex-col w-full">
+                <div className="flex flex-row w-full items-center justify-between">
+                    <img src="/Acauã - Icon.svg" alt="Logo" />
+                    <div class="flex flex-row gap-4">
+                        <a href="">
+                            <i class="fa-brands opacity-100 hover:opacity-70 fa-x-twitter text-[#71C829] text-lg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands opacity-100 hover:opacity-70 fa-instagram text-[#71C829] text-lg"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands opacity-100 hover:opacity-70 fa-discord text-[#71C829] text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p>Copyright © 2024 - 2025 Acauã Rangel. All rights reserved.</p>
+                </div>
+            </footer>
         </>
     )
 }
