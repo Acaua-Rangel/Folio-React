@@ -1,7 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp, FaDiscord } from "react-icons/fa";
-import CopyButton from "../CopyButton";
-import Header from "../Header";
+import Header from "../components/Header";
+import CopyButton from "../components/CopyButton";
 import "./Contact.css";
 
 function Contact() {

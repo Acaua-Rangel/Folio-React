@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
     constructor(props) {
@@ -18,14 +19,14 @@ class Header extends Component {
         return (
             <>
                 <header className="cabecalho">
-                    <a className="logo" href="/">
+                    <Link className="logo" to="/">
                         <img height={60} src="/Acauã - Icon.svg" alt="Logo" />
-                    </a>
+                    </Link>
                     <div>
                         <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                            <li><a className={page === "Home" ? "active" : ""} href="/">Home</a></li>
-                            <li><a className={page === "Curriculum" ? "active" : ""} href="/curriculum">Curriculum</a></li>
-                            <li><a className={page === "Contact" ? "active" : ""} href="/contact">Contact</a></li>
+                            <li><Link className={page === "Home" ? "active" : ""} to="/">Home</Link></li>
+                            <li><Link className={page === "Curriculum" ? "active" : ""} to="/curriculum">Curriculum</Link></li>
+                            <li><Link className={page === "Contact" ? "active" : ""} to="/contact">Contact</Link></li>
                         </ul>
                     </div>
 

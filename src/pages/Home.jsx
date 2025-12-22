@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaNetworkWired, FaDiscord, FaReact } from "react-icons/fa";
 import { SiGoogledocs } from "react-icons/si";
-import Header from "../Header"
+import Header from "../components/Header";
 import "./Home.css"
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
                             and MySQL databases.
                         </h2>
                         <a href="https://wa.me/5571981717609?text=Estou%20interessado%20em%20seus%20serviços">
-                            <button className="about-button">CONTACT US</button>
+                            <button className="about-button">CONTACT ME</button>
                         </a>
 
                         <div className="hiper-links">
@@ -30,7 +30,7 @@ function Home() {
                             <a className="hiper-links-item" href="https://github.com/Acaua-Rangel/">
                                 <FaGithub fontSize={60}/>
                             </a>
-                            <a className="hiper-links-item" href="/CV.pdf" download="CV - Acauã Rangel Brazil.pdf">
+                            <a className="hiper-links-item" href="/Acauã CV.pdf" download="CV - Acauã Rangel Brazil.pdf">
                                 <SiGoogledocs fontSize={55}/>
                             </a>
                         </div>
