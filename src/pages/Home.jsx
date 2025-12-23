@@ -66,7 +66,14 @@ function Home() {
             <Header page="Home"/>
             <main ref={mainRef}>
                 <section className="flex flex-row flex-wrap items-center justify-around pb-25 gap-7.5 min-h-[90vh]">
-                    <img className="max-w-2/5 about-image" src="/Person Icon.svg" alt="Foto de Acauã"/>
+                    <img 
+                        className="max-w-2/5 about-image" 
+                        src="/Person Icon.svg" 
+                        alt="Acauã's illustration"
+                        fetchPriority="high"
+                        loading="eager"
+                        decoding="async"
+                    />
                     
                     <div className="flex pt-25 flex-col gap-7.5">
                         <h1 className="text-7xl font-bold w-146.5 hero-element">ACAUÃ RANGEL BRAZIL</h1>
