@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;800&display=swap');
+
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    line-height: 1;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

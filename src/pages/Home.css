@@ -1,97 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-    font-size: 100%;
-}
-
-.about-container {
-    display: flex;
-    padding-top: 120px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 100px;
-    gap: 30px;
-}
-
-.about-info {
-    display: flex;
-    padding-top: 110px;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.about-image {
-    height: 400;
-}
-
-.about-name {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 800;
-    width: 586px;
-}
-
-.about-description {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    width: 586px;
-}
-
-.about-button {
-    background-color: white;
-    color: black;
-    border: 2px solid #000; 
-    width: 311px;
-    height: 61px;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-
-.about-button:hover {
-    background-color: #71C829;
-    border: 2px solid #71C829; 
-    color: white;
-}
-
-.hiper-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    gap: 25px;
-}
-
-.hiper-links-item {
-    cursor: pointer;
-    transition-duration: 0.4s;
-    color: black;
-}
-
-.hiper-links-item:hover {
-    color: #71C829;
-}
-
 .projects,
 .services {
     display: flex;
@@ -108,7 +14,6 @@ body {
     color:white;
     padding-top: 70px;
     text-align: center;
-    font-family: 'League Spartan', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 80px;

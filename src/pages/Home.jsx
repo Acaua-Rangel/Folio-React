@@ -8,29 +8,37 @@ function Home() {
         <>
             <Header page="Home"/>
             <main>
-                <section className="about-container">
-                    <img className="about-image" src="/Person Icon.svg" alt="Foto de Acauã"/>
-                    <div className="about-info">
-                        <h1 className="about-name">ACAUÃ RANGEL BRAZIL</h1>
-                        <h2 className="about-description">
-                            I'm a FullStack Developer who has been studying
-                            the subject for over 3 years and has developed
-                            projects for the web, mobile and desktop. I've
-                            also developed Discord bots with Roblox integration
-                            and MySQL databases.
+                <section className="flex flex-row flex-wrap items-center justify-around pb-25 gap-7.5">
+                    <img className="max-w-2/5 about-image" src="/Person Icon.svg" alt="Foto de Acauã"/>
+                    <div className="flex pt-25 flex-col gap-7.5">
+                        <h1 className="text-7xl font-bold w-146.5">ACAUÃ RANGEL BRAZIL</h1>
+                        <h2 className="text-2xl font-normal w-146.5">
+                            Coding since <strong>2020 (age 12)</strong>, I evolved from building AI Discord bots to architecting <strong>Corporate AI Agents</strong>. I use <strong>CoT</strong> and <strong>ReAct</strong> methodologies to deliver high-precision automation for internal business processes.
                         </h2>
-                        <a href="https://wa.me/5571981717609?text=Estou%20interessado%20em%20seus%20serviços">
-                            <button className="about-button">CONTACT ME</button>
+                        <a href="https://wa.me/5571981717609?text=Estou%20interessado%20em%20seus%20serviços" target="blank">
+                            <button className="bg-white border-2 text-lg border-black text-black w-77.75 h-15.25 font-semibold duration-300 hover:bg-[#71C829] hover:border-[#71C829] hover:text-white">CONTACT ME</button>
                         </a>
 
-                        <div className="hiper-links">
-                            <a className="hiper-links-item" href="https://www.linkedin.com/in/Acauã-Rangel/">
+                        <div className="flex flex-row items-center justify-start gap-7">
+                            <a 
+                                className="text-black hover:text-[#71C829] duration-300" 
+                                href="https://www.linkedin.com/in/Acauã-Rangel/"
+                                target="blank"
+                            >
                                 <FaLinkedin fontSize={60}/>
                             </a>
-                            <a className="hiper-links-item" href="https://github.com/Acaua-Rangel/">
+                            <a 
+                                className="text-black hover:text-[#71C829] duration-300" 
+                                href="https://github.com/Acaua-Rangel/"
+                                target="blank"
+                            >
                                 <FaGithub fontSize={60}/>
                             </a>
-                            <a className="hiper-links-item" href="/Acauã CV.pdf" download="CV - Acauã Rangel Brazil.pdf">
+                            <a 
+                                className="text-black hover:text-[#71C829] duration-300" 
+                                href="/CV - Acauã Rangel Brazil.pdf" 
+                                download="CV - Acauã Rangel Brazil.pdf"
+                            >
                                 <SiGoogledocs fontSize={55}/>
                             </a>
                         </div>

@@ -9,13 +9,9 @@ function Curriculum() {
             <section className="left">
                 <div className="about">
                     <h1 className="name">ACAUÃ RANGEL BRAZIL</h1>
-                    <h2 className="role">FULLSTACK DEVELOPER</h2>
+                    <h2 className="role">AI AGENT ENGINEER</h2>
                     <h3 className="description">
-                        Developer with 3 years of programming experience, mainly focused 
-                        on automation projects. I have skills on both <strong>the front-end</strong> 
-                        and <strong>back-end</strong>. I started my career as a <strong>freelancer</strong> in 
-                        August of the year 2023, currently, I am focused on developing 
-                        bots for Discord and developing websites in React.js and web services APIs.
+                        I started studying programming in 2020, at the age of 12, and since then I have been dedicated to learning and applying development concepts in practice. My journey began with a keen interest in applying Artificial Intelligence (AI) to Discord bots, which led me to explore both front-end and back-end development. My current focus is on creating corporate AI agents, applying reasoning methodologies (CoT, ReAct) to increase the accuracy and usefulness of AI in internal business processes.
                     </h3>
                 </div>
 

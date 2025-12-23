@@ -1,6 +1,6 @@
 import { Component } from "react";
-import "./Header.css";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 class Header extends Component {
     constructor(props) {
@@ -18,15 +18,18 @@ class Header extends Component {
 
         return (
             <>
-                <header className="cabecalho">
-                    <Link className="logo" to="/">
-                        <img height={60} src="/Acauã - Icon.svg" alt="Logo" />
+                <header className="flex flex-row items-center justify-between w-full px-5 pt-5 bg-white z-1000">
+                    <Link to="/">
+                        <img className="h-15" src="/Acauã - Icon.svg" alt="Logo" />
                     </Link>
                     <div>
-                        <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                            <li><Link className={page === "Home" ? "active" : ""} to="/">Home</Link></li>
-                            <li><Link className={page === "Curriculum" ? "active" : ""} to="/curriculum">Curriculum</Link></li>
-                            <li><Link className={page === "Contact" ? "active" : ""} to="/contact">Contact</Link></li>
+                        <ul id="navbar" className={this.state.clicked && "active"}>
+                            <li className="relative px-7.5 list-none">
+                                <Link className={page === "Home" && "active"} to="/">Home</Link></li>
+                            <li className="relative px-7.5 list-none">
+                                <Link className={page === "Curriculum" && "active"} to="/curriculum">Curriculum</Link></li>
+                            <li className="relative px-7.5 list-none">
+                                <Link className={page === "Contact" && "active"} to="/contact">Contact</Link></li>
                         </ul>
                     </div>
 
