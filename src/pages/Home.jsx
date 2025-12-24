@@ -1,10 +1,10 @@
 import { useLayoutEffect, useRef } from "react";
 import { FaGithub, FaLinkedin, FaNetworkWired, FaDiscord, FaReact } from "react-icons/fa";
 import { SiGoogledocs } from "react-icons/si";
-import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import Header from "../components/Header";
+import cvPdf from '/cv-acaua-rangel.pdf';
+import gsap from "gsap";
 import "./Home.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -70,7 +70,7 @@ function Home() {
                         className="max-w-2/5 about-image" 
                         src="/Person Icon.svg" 
                         alt="Acauã's illustration"
-                        fetchPriority="high"
+                        fetchpriority="high"
                         loading="eager"
                         decoding="async"
                     />
@@ -107,8 +107,10 @@ function Home() {
                             </a>
                             <a 
                                 className="text-black hover:text-[#71C829] duration-300" 
-                                href="/CV - Acauã Rangel Brazil.pdf" 
-                                download="CV - Acauã Rangel Brazil.pdf"
+                                href={cvPdf}
+                                download="CV Acauã Rangel Brazil.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <SiGoogledocs fontSize={55}/>
                             </a>

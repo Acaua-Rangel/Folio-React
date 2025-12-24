@@ -51,7 +51,7 @@ const Header = ({ page }) => {
                     {/* Mantida a lógica original: this.state.clicked vira clicked */}
                     <ul id="navbar" className={clicked ? "active" : ""}>
                         <li className="relative px-7.5 list-none">
-                            <Link className={page === "Home" ? "active" : ""} to="/">Home</Link>
+                            <Link className={page === "Home" ? "active duration" : ""} to="/">Home</Link>
                         </li>
                         <li className="relative px-7.5 list-none">
                             <Link className={page === "Curriculum" ? "active" : ""} to="/curriculum">Curriculum</Link>
