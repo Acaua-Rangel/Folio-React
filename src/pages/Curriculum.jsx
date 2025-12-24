@@ -20,7 +20,7 @@ function Curriculum() {
 
                     <div className="last-exp">
                         <h3>
-                            <strong>Internship - Hybrid: Ford Motor Company</strong>
+                            <strong>IEL Researcher - Hybrid: Ford Motor Company</strong>
                         </h3>
                         <h3>
                             <strong>AI Agent Developer & Full-Stack Developer</strong>
