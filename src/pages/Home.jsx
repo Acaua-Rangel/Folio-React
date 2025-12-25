@@ -120,7 +120,7 @@ function Home() {
         {
             title: "Monan SDK",
             subtitle: "Open Source Framework",
-            description: "Open-source framework in Bun for conversational AI agents with MDC Lovelace API, Qwen, and integration with Hyper and PgBoss for data management.",
+            description: "Open source framework in Bun for local conversational AI agents or internal agents for secret data. Focused on usability and native Bun performance.",
             image: "/Monan Icon.png",
             link: "https://github.com/monan-ai/monan-sdk",
             technologies: "Bun, TypeScript, Ollama"
@@ -128,7 +128,7 @@ function Home() {
         {
             title: "Researcher IEL - Ford Motor Company",
             subtitle: "Full-Stack Development + AI Agent Engineering",
-            description: "Development of internal tools using LangChain/LangGraph with SQL database integration and enterprise process automation.",
+            description: "Development of internal agents using LangChain/LangGraph with integration into internal documentation. Complete system for searching and creating code based on internal workflow.",
             image: "/Ford-picture.jpg",
             link: null,
             technologies: "LangChain, LangGraph, PostgreSQL, Python, Nginx, React"
@@ -136,7 +136,7 @@ function Home() {
         {
             title: "Freelancer - Castly",
             subtitle: "Multistreaming Platform",
-            description: "Multistreaming system with Twitch/YouTube integration. Automated video upload without the need for a high-cost computer.",
+            description: "Multistreaming system with integration based on FFMpeg and Nginx. Automated VOD for multiple platforms.",
             image: "/Castly Icon.png",
             link: null,
             technologies: "Node.js, Kubernetes, Docker, FFmpeg, MySQL, Nginx, React"
@@ -144,7 +144,7 @@ function Home() {
         {
             title: "Phoenix",
             subtitle: "React Website + AI Agent Chatbot",
-            description: "Responsive website developed in React with Gemini AI integration for interactive chatbot and scheduling system.",
+            description: "Responsive website developed in React with Gemini API integration for an interactive chatbot for SENAI Cimatec teachers, facilitating the consultation and creation of curriculum grids.",
             image: "/Phoenix.png",
             link: "https://phoenixligajovem.netlify.app/",
             technologies: "React, Gemini API, Tailwind CSS, Node.js, Google Cloud Platform"
@@ -160,7 +160,7 @@ function Home() {
         {
             title: "Pitanga",
             subtitle: "Multifunctional Discord Bot",
-            description: "Multifunctional bot with music system, TTS, virtual economy, mini-games, and fun commands for communities.",
+            description: "Multifunctional bot with music system, TTS, virtual economy, mini-games, and fun commands for communities. Early versions featured a chatbot system using Python's Chatterbot library.",
             image: "/Pitanga.png",
             link: "https://top.gg/bot/921954829352468572",
             technologies: "Discord.py, FFmpeg, MySQL, ElevenLabs API"
