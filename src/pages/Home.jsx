@@ -267,7 +267,7 @@ function Home() {
                                     <div className="w-full lg:w-1/2">
                                         {project.link ? (
                                             <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                                <div className="project-image overflow-hidden rounded-2xl shadow-2xl">
+                                                <div className="project-image overflow-hidden rounded-2xl">
                                                     <img 
                                                         src={project.image} 
                                                         alt={project.title}
@@ -276,7 +276,7 @@ function Home() {
                                                 </div>
                                             </a>
                                         ) : (
-                                            <div className="project-image overflow-hidden rounded-2xl shadow-2xl">
+                                            <div className="project-image overflow-hidden rounded-2xl">
                                                 <img 
                                                     src={project.image} 
                                                     alt={project.title}
