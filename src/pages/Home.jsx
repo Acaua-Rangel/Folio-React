@@ -305,7 +305,7 @@ function Home() {
                                                 rel="noopener noreferrer"
                                                 className="inline-block mt-4"
                                             >
-                                                <button className="bg-[#71C829] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5da821] transition-colors duration-300">
+                                                <button className="bg-white border-2 text-base sm:text-lg border-black text-black w-full sm:w-77.75 h-14 sm:h-15.25 font-semibold duration-300 hover:bg-[#71C829] hover:border-[#71C829] hover:text-white cursor-pointer">
                                                     VIEW PROJECT
                                                 </button>
                                             </a>

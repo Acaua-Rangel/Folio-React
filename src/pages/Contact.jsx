@@ -101,9 +101,9 @@ function Contact() {
     }, []);
 
     return (
-        <div className="max-w-full overflow-x-hidden">
+        <div className="max-w-full overflow-x-hidden min-h-screen ">
             <Header page="Contact"/>
-            <main ref={mainRef} className="pt-8 sm:pt-12 lg:pt-15 px-4 min-h-screen flex items-center justify-center">
+            <main ref={mainRef} className="pt-8 sm:pt-12 lg:pt-15 px-4 flex items-center justify-center">
                 <section className="flex flex-col items-center justify-center w-full max-w-3xl">
                     {/* Banner */}
                     <div className="contact-banner flex justify-center bg-linear-to-r from-[#A8CB8B] to-[#71C829] h-32 sm:h-36 lg:h-37.5 w-full rounded-t-2xl sm:rounded-t-[15px]"/>
@@ -120,7 +120,7 @@ function Contact() {
                         {/* Content */}
                         <div className="flex flex-col relative -top-10 sm:-top-11.25 px-6 sm:px-8 gap-4 sm:gap-3.75">
                             {/* Name and Role */}
-                            <div className="flex flex-col gap-1 sm:gap-2 mb-2">
+                            <div className="flex flex-col gap-1 sm:gap-2">
                                 <h2 className="contact-name font-bold text-xl sm:text-2xl lg:text-3xl w-full">
                                     ACAUÃ RANGEL BRAZIL
                                 </h2>
@@ -130,7 +130,7 @@ function Contact() {
                             </div>
 
                             {/* Divider */}
-                            <div className="w-full h-px bg-gray-200 mb-2"></div>
+                            <div className="w-full h-px bg-gray-200 my-1"></div>
 
                             {/* Contact Links */}
                             <div className="flex flex-col gap-3 sm:gap-4">
@@ -172,10 +172,10 @@ function Contact() {
                             </div>
 
                             {/* Divider */}
-                            <div className="w-full h-px bg-gray-200 mt-2 mb-1"></div>
+                            <div className="w-full h-px bg-gray-200 my-1"></div>
 
                             {/* Social Links */}
-                            <div className="flex items-center justify-center gap-6 sm:gap-8 mt-2">
+                            <div className="flex items-center justify-center gap-6 sm:gap-8">
                                 <a 
                                     className="social-link text-gray-700 hover:text-[#0A66C2] transition-colors duration-300" 
                                     href="https://www.linkedin.com/in/Acauã-Rangel/"
