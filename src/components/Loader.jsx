@@ -1,8 +1,8 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import "./Loader.css";
 
-const LogoSVGLoader = () => {
+const LogoSVGLoader = ({ duration = 3 }) => {
     const pathRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -18,12 +18,12 @@ const LogoSVGLoader = () => {
                 },
                 {
                     strokeDashoffset: 0,
-                    duration: 3,
+                    duration,
                     ease: "power2.inOut"
                 }
             );
         }
-    }, []);
+    }, [duration]);
 
     return (
         <svg width="300" height="220" viewBox="0 0 106 76" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
@@ -38,29 +38,32 @@ const LogoSVGLoader = () => {
     );
 };
 
-const Loader = ({ onLoadComplete }) => {
+const Loader = ({ onLoadComplete, fast = false }) => {
     const loaderRef = useRef(null);
+    const animDuration = fast ? 1 : 3;
+    const waitAfter = fast ? 200 : 1000;
 
     useLayoutEffect(() => {
-        // Fade out do loader após 4 segundos (3s da animação + 1s de espera)
-        setTimeout(() => {
+        const timer = setTimeout(() => {
             if (loaderRef.current) {
                 gsap.to(loaderRef.current, {
                     opacity: 0,
-                    duration: 1,
+                    duration: fast ? 0.4 : 1,
                     ease: "power2.inOut",
                     onComplete: () => {
                         onLoadComplete();
                     }
                 });
             }
-        }, 4000);
-    }, [onLoadComplete]);
+        }, (animDuration * 1000) + waitAfter);
+
+        return () => clearTimeout(timer);
+    }, [onLoadComplete, animDuration, waitAfter, fast]);
 
     return (
         <div ref={loaderRef} className="loader-container">
             <div className="loader-content">
-                <LogoSVGLoader />
+                <LogoSVGLoader duration={animDuration} />
             </div>
         </div>
     );

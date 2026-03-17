@@ -1,5 +1,5 @@
-import { useState, useLayoutEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { useState, useLayoutEffect, useRef, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import gsap from "gsap";
 
 const LogoSVG = ({ isFirstLoad }) => {
@@ -30,7 +30,7 @@ const LogoSVG = ({ isFirstLoad }) => {
             <path 
                 ref={pathRef}
                 d="M26.4818 74C31.3653 38.8875 33.2531 -24.9829 47.969 14.4152C61.7465 51.301 69.5188 87.0269 54.6811 68.3235C22.8868 28.2457 -68.3957 27.8893 104 27.8893" 
-                stroke="black" 
+                stroke="currentColor" 
                 strokeWidth="4" 
                 strokeLinecap="round"
                 style={!isFirstLoad ? { strokeDasharray: "none" } : {}}
@@ -45,10 +45,21 @@ const Header = ({ page }) => {
     const [isFirstLoad, setIsFirstLoad] = useState(false);
     
     const headerRef = useRef(null);
+    const location = useLocation();
 
     const handleClick = () => {
         setClicked(!clicked);
     };
+
+    // Smooth scroll to hash on navigation
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '');
+            setTimeout(() => {
+                document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        }
+    }, [location]);
 
     useLayoutEffect(() => {
         // Verificar se é a primeira carga do site
@@ -92,7 +103,7 @@ const Header = ({ page }) => {
 
     return (
         <>
-            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${hasScroll ? "header-scrolled" : "header-transparent"}`}>
+            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : "bg-transparent text-white"}`}>
                 <Link to="/" className="flex items-center h-12">
                     <LogoSVG isFirstLoad={isFirstLoad} />
                 </Link>
@@ -101,21 +112,23 @@ const Header = ({ page }) => {
                 <div className="hidden md:flex">
                     <ul className="flex flex-row items-center gap-10 font-light text-lg">
                         <li className="relative list-none">
-                            <Link className={page === "Home" ? "font-medium" : ""} to="/">Home</Link>
+                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Home" ? "font-medium" : ""}`} to="/">Home</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link to="/#about">About</Link>
+                            <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#skills">Skills</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link to="/#projects">Projects</Link>
+                            <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#projects">Projects</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link className={page === "Curriculum" ? "font-medium" : ""} to="/curriculum">Curriculum</Link>
+                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} to="/curriculum">Curriculum</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link to="/contact" className="flex items-center gap-2 bg-white pl-6 pr-1.5 py-1.5 rounded-full">
-                                Contact
-                                <img src="/arrow-sm.svg" alt="Arrow Right" className="w-9 p-1 rounded-full bg-[#23A147]" />
+                            <Link to="/contact" className="contact-border-btn rounded-full">
+                                <span className="flex items-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full">
+                                    Contact
+                                    <img src="/arrow-sm.svg" alt="Arrow Right" className="w-9 p-1 rounded-full bg-[#23A147]" />
+                                </span>
                             </Link>
                         </li>
                     </ul>
@@ -126,18 +139,18 @@ const Header = ({ page }) => {
                     onClick={handleClick}
                     className="md:hidden flex flex-col gap-1.5 focus:outline-none"
                 >
-                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${clicked ? "rotate-45 translate-y-2" : ""}`}></span>
-                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${clicked ? "opacity-0" : ""}`}></span>
-                    <span className={`w-6 h-0.5 bg-black transition-all duration-300 ${clicked ? "-rotate-45 -translate-y-2" : ""}`}></span>
+                    <span className={`w-6 h-0.5 bg-current transition-all duration-300 ${clicked ? "rotate-45 translate-y-2" : ""}`}></span>
+                    <span className={`w-6 h-0.5 bg-current transition-all duration-300 ${clicked ? "opacity-0" : ""}`}></span>
+                    <span className={`w-6 h-0.5 bg-current transition-all duration-300 ${clicked ? "-rotate-45 -translate-y-2" : ""}`}></span>
                 </button>
 
                 {/* Menu Mobile */}
                 {clicked && (
-                    <div className="absolute top-20 left-0 right-0 md:hidden bg-white border-b border-gray-200 shadow-lg animateSlideDown">
+                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
                         <ul className="flex flex-col gap-0 font-light text-lg">
                             <li className="border-b border-gray-100">
                                 <Link 
-                                    className={`block px-6 py-4 ${page === "Home" ? "font-medium" : ""}`} 
+                                    className={`block px-6 py-4 hover:text-[#71C829] transition-colors duration-300 ${page === "Home" ? "font-medium" : ""}`} 
                                     to="/"
                                     onClick={() => setClicked(false)}
                                 >
@@ -146,16 +159,16 @@ const Header = ({ page }) => {
                             </li>
                             <li className="border-b border-gray-100">
                                 <Link 
-                                    className="block px-6 py-4"
-                                    to="/#about"
+                                    className="block px-6 py-4 hover:text-[#71C829] transition-colors duration-300"
+                                    to="/#skills"
                                     onClick={() => setClicked(false)}
                                 >
-                                    About
+                                    Skills
                                 </Link>
                             </li>
                             <li className="border-b border-gray-100">
                                 <Link 
-                                    className="block px-6 py-4"
+                                    className="block px-6 py-4 hover:text-[#71C829] transition-colors duration-300"
                                     to="/#projects"
                                     onClick={() => setClicked(false)}
                                 >
@@ -164,7 +177,7 @@ const Header = ({ page }) => {
                             </li>
                             <li className="border-b border-gray-100">
                                 <Link 
-                                    className={`block px-6 py-4 ${page === "Curriculum" ? "font-medium" : ""}`} 
+                                    className={`block px-6 py-4 hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} 
                                     to="/curriculum"
                                     onClick={() => setClicked(false)}
                                 >
@@ -174,11 +187,13 @@ const Header = ({ page }) => {
                             <li className="px-6 py-4">
                                 <Link 
                                     to="/contact" 
-                                    className="flex items-center gap-2 bg-white border border-black pl-6 pr-1.5 py-1.5 rounded-full w-fit"
+                                    className="contact-border-btn rounded-full w-fit"
                                     onClick={() => setClicked(false)}
                                 >
-                                    Contact
-                                    <img src="/arrow-sm.svg" alt="Arrow Right" className="w-8 p-1 rounded-full bg-[#23A147]" />
+                                    <span className="flex items-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full">
+                                        Contact
+                                        <img src="/arrow-sm.svg" alt="Arrow Right" className="w-8 p-1 rounded-full bg-[#23A147]" />
+                                    </span>
                                 </Link>
                             </li>
                         </ul>
