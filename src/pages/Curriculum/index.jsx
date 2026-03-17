@@ -9,6 +9,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import ContactLinksSection from "./components/ContactLinksSection";
 import TechnologiesSection from "./components/TechnologiesSection";
 import EducationSection from "./components/EducationSection";
+import LinkPreview from "./components/LinkPreview";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,6 +154,7 @@ function Curriculum() {
     return (
         <div className="max-w-full overflow-x-hidden">
             <Header page="Curriculum"/>
+            <LinkPreview />
             <main ref={mainRef} className="flex flex-col lg:flex-row flex-wrap justify-center px-4 sm:px-6 lg:px-12 pt-28 sm:pt-32 lg:pt-36 pb-8 sm:pb-12 lg:pb-16 gap-12 sm:gap-16 lg:gap-20">
                 {/* Left Section */}
                 <section className="flex flex-col gap-12 sm:gap-16 lg:gap-20 w-full lg:w-[50vw]">

@@ -1,5 +1,8 @@
-import { useCallback } from "react";
+import { useCallback, useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
     {
@@ -53,6 +56,39 @@ const projects = [
 ];
 
 function ProjectsSection() {
+    const sectionRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            gsap.from(".projects-title", {
+                scrollTrigger: {
+                    trigger: ".projects-title",
+                    start: "top 85%",
+                    toggleActions: "play none none reverse",
+                },
+                y: 60,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out",
+            });
+
+            gsap.from(".project-card", {
+                scrollTrigger: {
+                    trigger: ".projects-grid",
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                },
+                y: 80,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.15,
+                ease: "power3.out",
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
+
     const handleMouseMove = useCallback((e) => {
         const card = e.currentTarget;
         const rect = card.getBoundingClientRect();
@@ -102,10 +138,10 @@ function ProjectsSection() {
     }, []);
 
     return (
-        <section id="projects" className="projects-section py-20 sm:py-28 bg-white">
+        <section ref={sectionRef} id="projects" className="projects-section py-20 sm:py-28 bg-white">
             <div className="max-w-7xl mx-auto px-6 sm:px-8">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center mb-16 sm:mb-20">MY WORK</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <h1 className="projects-title text-5xl sm:text-6xl lg:text-7xl font-bold text-center mb-16 sm:mb-20">MY WORK</h1>
+                <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <div
                             key={index}

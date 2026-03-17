@@ -103,7 +103,7 @@ const Header = ({ page }) => {
 
     return (
         <>
-            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : "bg-transparent text-white"}`}>
+            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : page === "Contact" ? "bg-transparent text-white" : "bg-transparent text-white"}`}>
                 <Link to="/" className="flex items-center h-12">
                     <LogoSVG isFirstLoad={isFirstLoad} />
                 </Link>
@@ -124,9 +124,9 @@ const Header = ({ page }) => {
                             <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} to="/curriculum">Curriculum</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link to="/contact" className="contact-border-btn rounded-full">
-                                <span className="flex items-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full">
-                                    Contact
+                            <Link to="/contact" className="contact-border-btn rounded-full shadow-md">
+                                <span className="flex items-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full leading-none">
+                                    <span className="translate-y-0.5">Contact</span>
                                     <img src="/arrow-sm.svg" alt="Arrow Right" className="w-9 p-1 rounded-full bg-[#23A147]" />
                                 </span>
                             </Link>
@@ -146,7 +146,7 @@ const Header = ({ page }) => {
 
                 {/* Menu Mobile */}
                 {clicked && (
-                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
+                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Contact" ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
                         <ul className="flex flex-col gap-0 font-light text-lg">
                             <li className="border-b border-gray-100">
                                 <Link 
@@ -187,11 +187,11 @@ const Header = ({ page }) => {
                             <li className="px-6 py-4">
                                 <Link 
                                     to="/contact" 
-                                    className="contact-border-btn rounded-full w-fit"
+                                    className="contact-border-btn rounded-full w-fit shadow-md"
                                     onClick={() => setClicked(false)}
                                 >
-                                    <span className="flex items-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full">
-                                        Contact
+                                    <span className="flex items-center text-center gap-2 bg-white text-black pl-6 pr-1.5 py-1.5 rounded-full leading-none">
+                                        <span className="translate-y-0.5">Contact</span>
                                         <img src="/arrow-sm.svg" alt="Arrow Right" className="w-8 p-1 rounded-full bg-[#23A147]" />
                                     </span>
                                 </Link>
