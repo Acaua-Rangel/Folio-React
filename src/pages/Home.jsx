@@ -1,8 +1,9 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGoogledocs } from "react-icons/si";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/Header";
+import Loader from "../components/Loader";
 import cvPdf from '/cv-acaua-rangel.pdf';
 import gsap from "gsap";
 
@@ -10,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
     const mainRef = useRef(null);
+    const [showLoader, setShowLoader] = useState(true);
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
@@ -169,60 +171,18 @@ function Home() {
 
     return (
         <>
+            {showLoader && <Loader onLoadComplete={() => setShowLoader(false)} />}
             <Header page="Home"/>
-            <main ref={mainRef}>
+            <main ref={mainRef} className="pt-20">
                 <section className="flex flex-col lg:flex-row flex-wrap items-center justify-center lg:justify-around pb-12 lg:pb-25 px-4 lg:px-0 gap-8 lg:gap-7.5 min-h-[90vh]">
-                    <img 
-                        className="w-full max-w-62.5 sm:max-w-75 lg:max-w-2/5 about-image" 
-                        src="/Person Icon.svg" 
-                        alt="Acauã's illustration"
-                        fetchpriority="high"
-                        loading="eager"
-                        decoding="async"
-                    />
-                    
-                    <div className="flex pt-8 lg:pt-25 flex-col gap-6 lg:gap-7.5 w-full lg:w-auto px-4 lg:px-0">
-                        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold w-full lg:w-146.5 hero-element text-center lg:text-left">
-                            ACAUÃ RANGEL BRAZIL
-                        </h1>
-                        
+                    <video autoPlay muted loop playsInline src="/hero/bg-hero.mp4"/>
+                    <img src="/hero/frame-1.png" alt="" />
+                    <div>
+                        <h2>Hi, I'm a</h2>
+                        <h1>AI Enginner</h1>
                         <h2 className="text-lg sm:text-xl lg:text-2xl font-normal w-full lg:w-146.5 hero-element text-center lg:text-left">
                             Coding since <strong>2020 (age 12)</strong>, I evolved from building AI Discord bots to architecting <strong>Corporate AI Agents</strong>. I use <strong>CoT</strong> and <strong>ReAct</strong> methodologies to deliver high-precision automation for internal business processes.
                         </h2>
-                        
-                        <div className="hero-element flex justify-center lg:justify-start">
-                            <a href="https://wa.me/5571981717609?text=I'm%20interested%20in%20your%20services" target="blank" className="w-full sm:w-auto">
-                                <button className="bg-white border-2 text-base sm:text-lg border-black text-black w-full sm:w-77.75 h-14 sm:h-15.25 font-semibold duration-300 hover:bg-[#71C829] hover:border-[#71C829] hover:text-white cursor-pointer">
-                                    CONTACT ME
-                                </button>
-                            </a>
-                        </div>
-
-                        <div className="flex flex-row items-center justify-center lg:justify-start gap-5 sm:gap-7 hero-element">
-                            <a 
-                                className="text-black hover:text-[#71C829] duration-300" 
-                                href="https://www.linkedin.com/in/Acauã-Rangel/"
-                                target="blank"
-                            >
-                                <FaLinkedin className="text-[45px] sm:text-[60px]"/>
-                            </a>
-                            <a 
-                                className="text-black hover:text-[#71C829] duration-300" 
-                                href="https://github.com/Acaua-Rangel/"
-                                target="blank"
-                            >
-                                <FaGithub className="text-[45px] sm:text-[60px]"/>
-                            </a>
-                            <a 
-                                className="text-black hover:text-[#71C829] duration-300" 
-                                href={cvPdf}
-                                download="CV Acauã Rangel Brazil.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <SiGoogledocs className="text-[40px] sm:text-[55px]"/>
-                            </a>
-                        </div>
                     </div>
                 </section>
 
