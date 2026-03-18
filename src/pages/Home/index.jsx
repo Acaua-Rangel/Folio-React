@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import TechCarousel from "./components/TechCarousel";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
+import TrajectorySection from "./components/TrajectorySection";
 import gsap from "gsap";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -76,6 +77,7 @@ function Home() {
                 <SkillsSection />
                 <ProjectsSection />
             </main>
+            <TrajectorySection />
             <Footer />
         </>
     )

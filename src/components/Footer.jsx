@@ -30,6 +30,7 @@ function Footer() {
                         <div className="flex flex-col gap-2 text-sm text-white/70">
                             <Link to="/" className="hover:text-[#71C829] transition-colors">Home</Link>
                             <Link to="/#skills" className="hover:text-[#71C829] transition-colors">Skills</Link>
+                            <Link to="/#trajectory" className="hover:text-[#71C829] transition-colors">Trajectory</Link>
                             <Link to="/curriculum" className="hover:text-[#71C829] transition-colors">Curriculum</Link>
                             <Link to="/contact" className="hover:text-[#71C829] transition-colors">Contact</Link>
                         </div>

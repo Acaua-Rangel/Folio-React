@@ -43,6 +43,7 @@ const Header = ({ page }) => {
     const [clicked, setClicked] = useState(false);
     const [hasScroll, setHasScroll] = useState(false);
     const [isFirstLoad, setIsFirstLoad] = useState(false);
+    const [inTrajectory, setInTrajectory] = useState(false);
     
     const headerRef = useRef(null);
     const location = useLocation();
@@ -101,9 +102,21 @@ const Header = ({ page }) => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    useEffect(() => {
+        const trajectoryEl = document.getElementById("trajectory");
+        if (!trajectoryEl) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => setInTrajectory(entry.isIntersecting),
+            { threshold: 0.1 }
+        );
+        observer.observe(trajectoryEl);
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <>
-            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : page === "Contact" ? "bg-transparent text-white" : "bg-transparent text-white"}`}>
+            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${inTrajectory ? "bg-transparent text-white" : hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : page === "Contact" ? "bg-transparent text-white" : "bg-transparent text-white"}`}>
                 <Link to="/" className="flex items-center h-12">
                     <LogoSVG isFirstLoad={isFirstLoad} />
                 </Link>
@@ -112,13 +125,16 @@ const Header = ({ page }) => {
                 <div className="hidden md:flex">
                     <ul className="flex flex-row items-center gap-10 font-light text-lg">
                         <li className="relative list-none">
-                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Home" ? "font-medium" : ""}`} to="/">Home</Link>
+                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Home" ? "font-medium" : ""}`} to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</Link>
                         </li>
                         <li className="relative list-none">
                             <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#skills">Skills</Link>
                         </li>
                         <li className="relative list-none">
                             <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#projects">Projects</Link>
+                        </li>
+                        <li className="relative list-none">
+                            <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#trajectory">Trajectory</Link>
                         </li>
                         <li className="relative list-none">
                             <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} to="/curriculum">Curriculum</Link>
@@ -146,13 +162,13 @@ const Header = ({ page }) => {
 
                 {/* Menu Mobile */}
                 {clicked && (
-                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Contact" ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
+                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${inTrajectory ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Contact" ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
                         <ul className="flex flex-col gap-0 font-light text-lg">
                             <li className="border-b border-gray-100">
                                 <Link 
                                     className={`block px-6 py-4 hover:text-[#71C829] transition-colors duration-300 ${page === "Home" ? "font-medium" : ""}`} 
                                     to="/"
-                                    onClick={() => setClicked(false)}
+                                    onClick={() => { setClicked(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                                 >
                                     Home
                                 </Link>
@@ -173,6 +189,15 @@ const Header = ({ page }) => {
                                     onClick={() => setClicked(false)}
                                 >
                                     Projects
+                                </Link>
+                            </li>
+                            <li className="border-b border-gray-100">
+                                <Link 
+                                    className="block px-6 py-4 hover:text-[#71C829] transition-colors duration-300"
+                                    to="/#trajectory"
+                                    onClick={() => setClicked(false)}
+                                >
+                                    Trajectory
                                 </Link>
                             </li>
                             <li className="border-b border-gray-100">

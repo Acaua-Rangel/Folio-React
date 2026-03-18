@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const phrases = [
     { line1: " I'm a", line2: "AI Engineer" },
@@ -116,7 +117,28 @@ function HeroSection() {
                     <h2 className="text-base sm:text-lg lg:text-xl font-normal hero-element max-w-lg">
                         Coding since <strong>2020 (age 12)</strong>, I evolved from building AI Discord bots to architecting <strong>Corporate AI Agents</strong>. I use <strong>CoT</strong> and <strong>ReAct</strong> methodologies to deliver high-precision automation for internal business processes.
                     </h2>
+                    <div className="flex items-center gap-5 mt-4 hero-element lg:hidden">
+                        <a href="https://github.com/Acaua-Rangel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300">
+                            <FaGithub className="text-xl" />
+                            <span className="text-sm sm:text-base">Acaua-Rangel</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/acauã-rangel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300">
+                            <FaLinkedin className="text-xl" />
+                            <span className="text-sm sm:text-base">Acauã Rangel</span>
+                        </a>
+                    </div>
                 </div>
+            </div>
+            {/* Social links - absolute bottom left on desktop */}
+            <div className="hidden lg:flex absolute bottom-30 left-17 z-10 items-center gap-5 hero-element">
+                <a href="https://github.com/Acaua-Rangel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300">
+                    <FaGithub className="text-xl" />
+                    <span className="text-base">Acaua-Rangel</span>
+                </a>
+                <a href="https://www.linkedin.com/in/acauã-rangel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-300">
+                    <FaLinkedin className="text-xl" />
+                    <span className="text-base">Acauã Rangel</span>
+                </a>
             </div>
             {/* Scroll down indicator */}
             <div
