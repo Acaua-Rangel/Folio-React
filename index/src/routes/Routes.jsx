@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import Home from '../pages/Home';
-import Curriculum from '../pages/Curriculum';
+import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
 import Loader from '../components/Loader';
 
@@ -57,7 +57,7 @@ const AppRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<Home/>} />
-            <Route path='/curriculum' element={<Curriculum/>} />
+            <Route path='/resume' element={<Resume/>} />
             <Route path='/contact' element={<Contact/>} />
         </Routes>
     );

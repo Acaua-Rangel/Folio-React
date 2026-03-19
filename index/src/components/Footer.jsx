@@ -31,7 +31,7 @@ function Footer() {
                             <Link to="/" className="hover:text-[#71C829] transition-colors">Home</Link>
                             <Link to="/#skills" className="hover:text-[#71C829] transition-colors">Skills</Link>
                             <Link to="/#trajectory" className="hover:text-[#71C829] transition-colors">Trajectory</Link>
-                            <Link to="/curriculum" className="hover:text-[#71C829] transition-colors">Curriculum</Link>
+                            <Link to="/resume" className="hover:text-[#71C829] transition-colors">Resume</Link>
                             <Link to="/contact" className="hover:text-[#71C829] transition-colors">Contact</Link>
                         </div>
                     </div>

@@ -13,14 +13,14 @@ const slides = [
             "I started programming at age 12, driven by the dream of creating an AI assistant that could provide better answers than what was available at the time. Back then, only GPT-2 existed in closed beta. So I built two versions of my own assistant: one using DistilBERT and another with Python's ChatterBot library.",
     },
     {
-        image: "/history/2.png",
+        image: "/history/3.png",
         year: "2022",
         title: "Scientific Research at SESI",
         description:
             "I joined the scientific research program at SESI in 2022, motivated by my family of researchers. The desire to contribute to science has always been present in my family environment.",
     },
     {
-        image: "/history/3.png",
+        image: "/history/2.png",
         year: "2023",
         title: "Skills for Innovation — Intel & CRT-BA",
         description:

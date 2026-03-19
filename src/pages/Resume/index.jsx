@@ -13,7 +13,7 @@ import LinkPreview from "./components/LinkPreview";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Curriculum() {
+function Resume() {
     const mainRef = useRef(null);
 
     useLayoutEffect(() => {
@@ -153,7 +153,7 @@ function Curriculum() {
 
     return (
         <div className="max-w-full overflow-x-hidden">
-            <Header page="Curriculum"/>
+            <Header page="Resume"/>
             <LinkPreview />
             <main ref={mainRef} className="flex flex-col lg:flex-row flex-wrap justify-center px-4 sm:px-6 lg:px-12 pt-28 sm:pt-32 lg:pt-36 pb-8 sm:pb-12 lg:pb-16 gap-12 sm:gap-16 lg:gap-20">
                 {/* Left Section */}
@@ -184,4 +184,4 @@ function Curriculum() {
     )
 }
 
-export default Curriculum;
+export default Resume;

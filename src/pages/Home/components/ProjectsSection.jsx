@@ -32,7 +32,7 @@ const projects = [
     {
         title: "Phoenix",
         subtitle: "React Website + AI Agent Chatbot",
-        description: "Responsive website developed in React with Gemini API integration for an interactive chatbot for SENAI Cimatec teachers, facilitating the consultation and creation of curriculum grids.",
+        description: "Responsive website developed in React with Gemini API integration for an interactive chatbot for SENAI Cimatec teachers, facilitating the consultation and creation of resume grids.",
         image: "/Phoenix.png",
         link: "https://phoenixligajovem.netlify.app/",
         technologies: ["React", "Gemini API", "Tailwind CSS", "Node.js", "GCP"]

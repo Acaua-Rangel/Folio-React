@@ -116,7 +116,7 @@ const Header = ({ page }) => {
 
     return (
         <>
-            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${inTrajectory ? "bg-transparent text-white" : hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Curriculum" ? "bg-transparent text-black" : page === "Contact" ? "bg-transparent text-white" : "bg-transparent text-white"}`}>
+            <header ref={headerRef} className={`flex flex-row items-center justify-between w-full px-5 py-5 z-1000 fixed top-0 left-0 right-0 transition-all duration-300 ${inTrajectory ? "bg-transparent text-white" : hasScroll ? "bg-white/70 backdrop-blur-md shadow-sm text-black" : page === "Resume" ? "bg-transparent text-black" : page === "Contact" ? "bg-transparent text-white" : "bg-transparent text-white"}`}>
                 <Link to="/" className="flex items-center h-12">
                     <LogoSVG isFirstLoad={isFirstLoad} />
                 </Link>
@@ -137,7 +137,7 @@ const Header = ({ page }) => {
                             <Link className="hover:text-[#71C829] transition-colors duration-300" to="/#trajectory">Trajectory</Link>
                         </li>
                         <li className="relative list-none">
-                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} to="/curriculum">Curriculum</Link>
+                            <Link className={`hover:text-[#71C829] transition-colors duration-300 ${page === "Resume" ? "font-medium" : ""}`} to="/resume">Resume</Link>
                         </li>
                         <li className="relative list-none">
                             <Link to="/contact" className="contact-border-btn rounded-full shadow-md">
@@ -162,7 +162,7 @@ const Header = ({ page }) => {
 
                 {/* Menu Mobile */}
                 {clicked && (
-                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${inTrajectory ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Curriculum" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Contact" ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
+                    <div className={`absolute top-20 left-0 right-0 md:hidden border-b shadow-lg animateSlideDown transition-all duration-300 ${inTrajectory ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : hasScroll ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Resume" ? "bg-white/70 backdrop-blur-md border-gray-200 text-black" : page === "Contact" ? "bg-black/50 backdrop-blur-md border-gray-700 text-white" : "bg-black/50 backdrop-blur-md border-gray-700 text-white"}`}>
                         <ul className="flex flex-col gap-0 font-light text-lg">
                             <li className="border-b border-gray-100">
                                 <Link 
@@ -202,11 +202,11 @@ const Header = ({ page }) => {
                             </li>
                             <li className="border-b border-gray-100">
                                 <Link 
-                                    className={`block px-6 py-4 hover:text-[#71C829] transition-colors duration-300 ${page === "Curriculum" ? "font-medium" : ""}`} 
-                                    to="/curriculum"
+                                    className={`block px-6 py-4 hover:text-[#71C829] transition-colors duration-300 ${page === "Resume" ? "font-medium" : ""}`} 
+                                    to="/resume"
                                     onClick={() => setClicked(false)}
                                 >
-                                    Curriculum
+                                    Resume
                                 </Link>
                             </li>
                             <li className="px-6 py-4">
