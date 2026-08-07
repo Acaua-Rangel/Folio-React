@@ -12,7 +12,7 @@ function ContactLinksSection() {
                     <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/acauã-rangel" target="_blank" rel="noopener noreferrer" className="text-[#71C829] hover:underline transition-colors duration-300">linkedin.com/in/acauã-rangel</a>
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-xl font-normal pb-1">
-                    <strong>Telephone:</strong> <a href="tel:+5571981717609" className="text-[#71C829] hover:underline transition-colors duration-300">+55 (71) 98171-7609</a>
+                    <strong>Telephone:</strong> <a href="https://wa.me/5571981717609" className="text-[#71C829] hover:underline transition-colors duration-300">+55 (71) 98171-7609</a>
                 </h3>
                 <h3 className="text-base sm:text-lg lg:text-xl font-normal pb-1">
                     <strong>E-mail:</strong> <a href="mailto:acauarangel17@gmail.com" className="text-[#71C829] hover:underline transition-colors duration-300 break-all">acauarangel17@gmail.com</a>
