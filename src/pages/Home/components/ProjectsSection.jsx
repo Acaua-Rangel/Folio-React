@@ -9,7 +9,7 @@ const projects = [
         title: "Monan SDK",
         subtitle: "Open Source Framework",
         description: "Open source framework in Bun for local conversational AI agents or internal agents for secret data. Focused on usability and native Bun performance.",
-        image: "/Monan Icon.png",
+        image: "/Monan-Icon.webp",
         link: "https://github.com/monan-ai/monan-sdk",
         technologies: ["Bun", "TypeScript", "Ollama"]
     },
@@ -17,7 +17,7 @@ const projects = [
         title: "Researcher IEL - Ford Motor Company",
         subtitle: "Full-Stack Development + AI Agent Engineering",
         description: "Development of internal agents using LangChain/LangGraph with integration into internal documentation. Complete system for searching and creating code based on internal workflow.",
-        image: "/Ford-picture.jpg",
+        image: "/Ford-picture.webp",
         link: null,
         technologies: ["LangChain", "LangGraph", "PostgreSQL", "Python", "Nginx", "React"]
     },
@@ -25,7 +25,7 @@ const projects = [
         title: "Freelancer - Castly",
         subtitle: "Multistreaming Platform",
         description: "Multistreaming system with integration based on FFMpeg and Nginx. Automated VOD for multiple platforms.",
-        image: "/Castly Icon.png",
+        image: "/Castly-Icon.webp",
         link: null,
         technologies: ["Node.js", "Kubernetes", "Docker", "FFmpeg", "MySQL", "Nginx", "React"]
     },
@@ -33,7 +33,7 @@ const projects = [
         title: "Phoenix",
         subtitle: "React Website + AI Agent Chatbot",
         description: "Responsive website developed in React with Gemini API integration for an interactive chatbot for SENAI Cimatec teachers, facilitating the consultation and creation of resume grids.",
-        image: "/Phoenix.png",
+        image: "/Phoenix.webp",
         link: "https://phoenixligajovem.netlify.app/",
         technologies: ["React", "Gemini API", "Tailwind CSS", "Node.js", "GCP"]
     },
@@ -41,7 +41,7 @@ const projects = [
         title: "Valkyrio",
         subtitle: "XP - Discord Bot",
         description: "XP bot for Discord with Roblox API integration, ranking system, and automatic rewards.",
-        image: "/Valkyrio.png",
+        image: "/Valkyrio.webp",
         link: null,
         technologies: ["Discord.py", "Roblox API", "AWS"]
     },
@@ -49,7 +49,7 @@ const projects = [
         title: "Pitanga",
         subtitle: "Multifunctional Discord Bot",
         description: "Multifunctional bot with music system, TTS, virtual economy, mini-games, and fun commands for communities. Early versions featured a chatbot system using Python's Chatterbot library.",
-        image: "/Pitanga.png",
+        image: "/Pitanga.webp",
         link: "https://top.gg/bot/921954829352468572",
         technologies: ["Discord.py", "FFmpeg", "MySQL", "ElevenLabs API"]
     },
@@ -157,6 +157,8 @@ function ProjectsSection() {
                                     <img 
                                         src={project.image} 
                                         alt={project.title}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     />
                                 </div>

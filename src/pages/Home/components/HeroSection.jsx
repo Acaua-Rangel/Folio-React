@@ -88,8 +88,10 @@ function HeroSection() {
     return (
         <section className="relative h-screen rounded-b-3xl overflow-hidden z-10">
             <img
-                src="/hero/frame-1.png"
+                src="/hero/frame-1.webp"
                 alt=""
+                fetchPriority="high"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover object-top"
             />
             <video
@@ -97,6 +99,7 @@ function HeroSection() {
                 muted
                 loop
                 playsInline
+                preload="auto"
                 src="/hero/bg-hero.mp4"
                 onCanPlay={() => setVideoLoaded(true)}
                 className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-500 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}

@@ -6,42 +6,42 @@ gsap.registerPlugin(ScrollTrigger);
 
 const slides = [
     {
-        image: "/history/1.png",
+        image: "/history/1.webp",
         year: "2020",
         title: "The Beginning of Programming",
         description:
             "I started programming at age 12, driven by the dream of creating an AI assistant that could provide better answers than what was available at the time. Back then, only GPT-2 existed in closed beta. So I built two versions of my own assistant: one using DistilBERT and another with Python's ChatterBot library.",
     },
     {
-        image: "/history/2.png",
+        image: "/history/3.webp",
         year: "2022",
         title: "Scientific Research at SESI",
         description:
             "I joined the scientific research program at SESI in 2022, motivated by my family of researchers. The desire to contribute to science has always been present in my family environment.",
     },
     {
-        image: "/history/3.png",
+        image: "/history/2.webp",
         year: "2023",
         title: "Skills for Innovation — Intel & CRT-BA",
         description:
             "I completed the Intel Skills for Innovation course, in partnership with CRT-BA (Regional Council of Technicians of Bahia). I had the opportunity to participate by standing out in the Mechatronics course I took during high school.",
     },
     {
-        image: "/history/4.png",
+        image: "/history/4.webp",
         year: "2024",
         title: "FENIC Science Fair",
         description:
             "After three years of research — and having switched projects along the way, from Microalgae Spray Dryer to Autonomous Zagi Wing — I had the opportunity to present my research at the FENIC science fair, its first edition held here in Salvador, Bahia.",
     },
     {
-        image: "/history/5.png",
+        image: "/history/5.webp",
         year: "2025",
         title: "Ford Enter Program",
         description:
             "After the research period, I wanted to focus on programming, especially since I was already working at Castly, a Texas-based multistreaming startup. I joined the first class in Salvador of the Ford Enter program — a frontend developer training program — after a selection process with over 1,500 applicants, where only 60 people were selected (40 in the morning and 20 in the afternoon).",
     },
     {
-        image: "/history/6.png",
+        image: "/history/6.webp",
         year: "2025",
         title: "Joining Ford",
         description:
@@ -143,6 +143,7 @@ function TrajectorySection() {
                             alt={slide.title}
                             className="w-full h-full object-cover"
                             loading={i < 2 ? "eager" : "lazy"}
+                            decoding="async"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-black/10" />
                     </div>

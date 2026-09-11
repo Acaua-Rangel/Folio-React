@@ -106,8 +106,10 @@ function ContactCard() {
             {/* Profile Image */}
             <img 
                 className="profile-img relative -top-16 sm:-top-18.75 left-8 sm:left-11.25 w-32 h-32 sm:w-36 sm:h-36 lg:w-37.5 lg:h-37.5 rounded-full border-4 border-[#23A147] shadow-xl" 
-                src="/Perfil.jpeg" 
+                src="/Perfil.webp" 
                 alt="Profile picture"
+                loading="lazy"
+                decoding="async"
             />
             
             {/* Content */}
