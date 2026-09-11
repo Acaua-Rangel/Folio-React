@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const phrases = [
-    { line1: " I'm a", line2: "AI Engineer" },
+    { line1: " I'm an", line2: "AI Engineer" },
     { line1: " my name is", line2: "Acauã" },
 ];
 
