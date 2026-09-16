@@ -29,6 +29,18 @@ export const generateAndDownloadDocx = (language = 'en') => {
 
     const createContactRuns = () => {
         const runs = [];
+        const portfolioLabel = language === 'pt' ? "Portfólio" : "Portfolio";
+        
+        runs.push(
+            new ExternalHyperlink({
+                children: [
+                    new TextRun({ text: `${portfolioLabel}: acaua.vercel.app`, size: 20, color: "000000", underline: {} }),
+                ],
+                link: "https://acaua.vercel.app",
+            })
+        );
+        runs.push(new TextRun({ text: " | ", size: 20, color: "000000" }));
+
         data.contact.forEach((c, index) => {
             runs.push(
                 new ExternalHyperlink({

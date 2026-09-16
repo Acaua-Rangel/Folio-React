@@ -5,7 +5,6 @@ export const resumeData = {
         description: "I started studying programming in 2020, at the age of 12, and since then I have been dedicated to learning and applying development concepts in practice. My journey began with a keen interest in applying Artificial Intelligence (AI) to Discord bots, which led me to explore both front-end and back-end development. My current focus is on creating corporate AI agents, applying reasoning methodologies (CoT, ReAct) to increase the precision and utility of AI in companies' internal processes."
     },
     contact: [
-        { label: "Portfolio", value: "acaua.vercel.app", link: "https://acaua.vercel.app" },
         { label: "GitHub", value: "https://github.com/Acaua-Rangel/", link: "https://github.com/Acaua-Rangel/" },
         { label: "LinkedIn", value: "linkedin.com/in/acauã-rangel", link: "https://www.linkedin.com/in/acauã-rangel" },
         { label: "Phone", value: "+55 (71) 98171-7609", link: "tel:+5571981717609" },
@@ -83,7 +82,6 @@ export const resumeDataPt = {
         description: "Comecei a estudar programação em 2020, aos 12 anos, e desde então tenho me dedicado a aprender e aplicar conceitos de desenvolvimento na prática. Minha jornada começou com um grande interesse em aplicar Inteligência Artificial (IA) em bots do Discord, o que me levou a explorar desenvolvimento tanto front-end quanto back-end. Meu foco atual é na criação de agentes de IA corporativos, aplicando metodologias de raciocínio (CoT, ReAct) para aumentar a precisão e a utilidade da IA nos processos internos das empresas."
     },
     contact: [
-        { label: "Portfólio", value: "acaua.vercel.app", link: "https://acaua.vercel.app" },
         { label: "GitHub", value: "https://github.com/Acaua-Rangel/", link: "https://github.com/Acaua-Rangel/" },
         { label: "LinkedIn", value: "linkedin.com/in/acauã-rangel", link: "https://www.linkedin.com/in/acauã-rangel" },
         { label: "Telefone", value: "+55 (71) 98171-7609", link: "tel:+5571981717609" },
