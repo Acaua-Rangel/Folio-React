@@ -5,6 +5,7 @@ export const resumeData = {
         description: "I started studying programming in 2020, at the age of 12, and since then I have been dedicated to learning and applying development concepts in practice. My journey began with a keen interest in applying Artificial Intelligence (AI) to Discord bots, which led me to explore both front-end and back-end development. My current focus is on creating corporate AI agents, applying reasoning methodologies (CoT, ReAct) to increase the precision and utility of AI in companies' internal processes."
     },
     contact: [
+        { label: "Portfolio", value: "acaua.vercel.app", link: "https://acaua.vercel.app" },
         { label: "GitHub", value: "https://github.com/Acaua-Rangel/", link: "https://github.com/Acaua-Rangel/" },
         { label: "LinkedIn", value: "linkedin.com/in/acauã-rangel", link: "https://www.linkedin.com/in/acauã-rangel" },
         { label: "Phone", value: "+55 (71) 98171-7609", link: "tel:+5571981717609" },
@@ -22,8 +23,8 @@ export const resumeData = {
             title: "Ford Motor Company",
             role: "AI Agent Developer & Full-Stack Developer",
             durationLocality: "2025 - | Camaçari - BA",
-            description: "Engineered scalable AI agents integrated with vector databases (PGVector) and Elasticsearch, automating internal workflows and <strong>reducing manual documentation search time by 60%</strong>. I successfully led an architecture migration from LangChain to <strong>LlamaIndex</strong> to optimize the AI system. I also developed a full-stack corporate carpool application focused on <strong>cost reduction for employees</strong>, allowing them to split the trip cost equally while significantly <strong>improving commute comfort</strong> between cities.",
-            technologies: "Prisma, NestJS, React, Google Cloud, Tekton, Terraform, LlamaIndex, LangChain/LangGraph, PGVector, Elastic Search, PostgreSQL",
+            description: "Engineered scalable AI agents integrated with vector databases (PGVector) and Elasticsearch, automating internal workflows and <strong>reducing manual documentation search time by 60%</strong>. I successfully led an architecture migration from LangChain to <strong>LlamaIndex</strong> to optimize the AI system. Additionally, I developed a specialized AI agent using <strong>Databricks</strong> and <strong>LangChain</strong> to assist in training executive teams. This agent utilizes RAG by accessing internal papers, meeting transcripts, Microsoft Teams conversations, and the user's personal OneDrive files for deep contextualization. I also developed a full-stack corporate carpool application focused on <strong>cost reduction for employees</strong>, allowing them to split the trip cost equally while significantly <strong>improving commute comfort</strong> between cities.",
+            technologies: "Prisma, NestJS, React, Google Cloud, Tekton, Terraform, LlamaIndex, LangChain/LangGraph, PGVector, Elastic Search, PostgreSQL, Databricks",
             type: "work"
         },
         {
@@ -61,7 +62,7 @@ export const resumeData = {
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
         { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
         { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Firebase", "PGVector", "Elastic Search"] },
-        { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform"] },
+        { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "AI Ecosystem", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
         { category: "Architecture & Others", items: ["WebSockets", "Domain-Driven Design (DDD)", "Lavalink", "FFmpeg", "Zod"] }
     ]
@@ -74,6 +75,7 @@ export const resumeDataPt = {
         description: "Comecei a estudar programação em 2020, aos 12 anos, e desde então tenho me dedicado a aprender e aplicar conceitos de desenvolvimento na prática. Minha jornada começou com um grande interesse em aplicar Inteligência Artificial (IA) em bots do Discord, o que me levou a explorar desenvolvimento tanto front-end quanto back-end. Meu foco atual é na criação de agentes de IA corporativos, aplicando metodologias de raciocínio (CoT, ReAct) para aumentar a precisão e a utilidade da IA nos processos internos das empresas."
     },
     contact: [
+        { label: "Portfólio", value: "acaua.vercel.app", link: "https://acaua.vercel.app" },
         { label: "GitHub", value: "https://github.com/Acaua-Rangel/", link: "https://github.com/Acaua-Rangel/" },
         { label: "LinkedIn", value: "linkedin.com/in/acauã-rangel", link: "https://www.linkedin.com/in/acauã-rangel" },
         { label: "Telefone", value: "+55 (71) 98171-7609", link: "tel:+5571981717609" },
@@ -91,8 +93,8 @@ export const resumeDataPt = {
             title: "Ford Motor Company",
             role: "Desenvolvedor de Agentes de IA & Desenvolvedor Full-Stack",
             durationLocality: "2025 - | Camaçari - BA",
-            description: "Engenhei agentes de IA escaláveis integrados com bancos de dados vetoriais (PGVector) e Elasticsearch, automatizando fluxos de trabalho internos e <strong>reduzindo o tempo de busca de documentação em 60%</strong>. Conduzi com sucesso uma migração de arquitetura do LangChain para <strong>LlamaIndex</strong> para otimizar o sistema de IA. Também desenvolvi uma aplicação full-stack de caronas corporativas focada na <strong>redução de custos para os trabalhadores</strong>, permitindo que dividam o custo da viagem em partes iguais, além de <strong>aumentar significativamente o conforto</strong> no trajeto entre diferentes cidades.",
-            technologies: "Prisma, NestJS, React, Google Cloud, Tekton, Terraform, LlamaIndex, LangChain/LangGraph, PGVector, Elastic Search, PostgreSQL",
+            description: "Engenhei agentes de IA escaláveis integrados com bancos de dados vetoriais (PGVector) e Elasticsearch, automatizando fluxos de trabalho internos e <strong>reduzindo o tempo de busca de documentação em 60%</strong>. Conduzi com sucesso uma migração de arquitetura do LangChain para <strong>LlamaIndex</strong> para otimizar o sistema de IA. Adicionalmente, desenvolvi um agente de IA especializado utilizando <strong>Databricks</strong> e <strong>LangChain</strong> para auxiliar no treinamento de times de diretoria. Este agente utiliza RAG, acessando papers internos, transcrições de reuniões, conversas do Microsoft Teams e arquivos pessoais do OneDrive do usuário para contextualização profunda. Também desenvolvi uma aplicação full-stack de caronas corporativas focada na <strong>redução de custos para os trabalhadores</strong>, permitindo que dividam o custo da viagem em partes iguais, além de <strong>aumentar significativamente o conforto</strong> no trajeto entre diferentes cidades.",
+            technologies: "Prisma, NestJS, React, Google Cloud, Tekton, Terraform, LlamaIndex, LangChain/LangGraph, PGVector, Elastic Search, PostgreSQL, Databricks",
             type: "work"
         },
         {
@@ -130,7 +132,7 @@ export const resumeDataPt = {
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
         { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
         { category: "Bancos de Dados", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Firebase", "PGVector", "Elastic Search"] },
-        { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform"] },
+        { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "Ecossistema de IA", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
         { category: "Arquitetura & Outros", items: ["WebSockets", "Domain-Driven Design (DDD)", "Lavalink", "FFmpeg", "Zod"] }
     ]
