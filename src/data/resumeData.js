@@ -28,6 +28,14 @@ export const resumeData = {
             type: "work"
         },
         {
+            title: "Nouva Company Ltda",
+            role: "Software Engineer",
+            durationLocality: "2026 | Remote",
+            description: "Maintained the <strong>Shopify Returns Hub</strong>, an AI-powered system for managing e-commerce returns. I led a critical security overhaul, implementing strict <strong>Row-Level Security (RLS)</strong> policies in PostgreSQL and server-side role validation across Supabase Edge Functions. I successfully identified and patched severe vulnerabilities, including cross-tenant data leaks and unauthorized AI executions. Additionally, I developed a comprehensive <strong>Role-Based Access Control (RBAC)</strong> system with store-level isolation and engineered secure internal communication protocols.",
+            technologies: "React, TypeScript, Supabase, PostgreSQL, Edge Functions, TailwindCSS",
+            type: "work"
+        },
+        {
             title: "Convoke LLC (Folkward)",
             role: "Software Engineer & AI Developer",
             durationLocality: "2026 | Remote",
@@ -61,7 +69,7 @@ export const resumeData = {
     technologies: [
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
         { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
-        { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Firebase", "PGVector", "Elastic Search"] },
+        { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Supabase", "Firebase", "PGVector", "Elastic Search"] },
         { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "AI Ecosystem", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
         { category: "Architecture & Others", items: ["WebSockets", "Domain-Driven Design (DDD)", "Lavalink", "FFmpeg", "Zod"] }
@@ -98,6 +106,14 @@ export const resumeDataPt = {
             type: "work"
         },
         {
+            title: "Nouva Company Ltda",
+            role: "Engenheiro de Software",
+            durationLocality: "2026 | Remoto",
+            description: "Atuei na manutenção do <strong>Shopify Returns Hub</strong>, um sistema de gestão de devoluções de e-commerce impulsionado por IA. Liderei uma grande revisão de segurança, implementando políticas rigorosas de <strong>Row-Level Security (RLS)</strong> no PostgreSQL e validação de papéis no back-end (Supabase Edge Functions). Identifiquei e corrigi vulnerabilidades críticas, incluindo vazamentos de dados entre lojas (cross-tenant) e execuções não autorizadas de IA. Além disso, desenvolvi um sistema completo de <strong>Controle de Acesso Baseado em Funções (RBAC)</strong> com isolamento por loja e estruturei protocolos seguros de comunicação interna.",
+            technologies: "React, TypeScript, Supabase, PostgreSQL, Edge Functions, TailwindCSS",
+            type: "work"
+        },
+        {
             title: "Convoke LLC (Folkward)",
             role: "Engenheiro de Software & Desenvolvedor de IA",
             durationLocality: "2026 | Remoto",
@@ -131,7 +147,7 @@ export const resumeDataPt = {
     technologies: [
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
         { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
-        { category: "Bancos de Dados", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Firebase", "PGVector", "Elastic Search"] },
+        { category: "Bancos de Dados", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Supabase", "Firebase", "PGVector", "Elastic Search"] },
         { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "Ecossistema de IA", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
         { category: "Arquitetura & Outros", items: ["WebSockets", "Domain-Driven Design (DDD)", "Lavalink", "FFmpeg", "Zod"] }
