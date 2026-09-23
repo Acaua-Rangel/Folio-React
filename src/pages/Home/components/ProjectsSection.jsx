@@ -6,6 +6,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
     {
+        title: "Kakacomics",
+        subtitle: "Full-Stack Development",
+        description: "Robust Laravel/React platform featuring seamless Google Identity Services authentication (bypassing ModSecurity blocks) and a complete MercadoPago integration for subscriptions, role-based ad visibility, and admin management, all built with 100% test coverage.",
+        image: "/Kakacomics.webp",
+        link: "https://kakacomics.com",
+        technologies: ["Laravel", "React", "TypeScript", "MercadoPago API", "Google Identity Services", "PHPUnit"]
+    },
+    {
         title: "Monan SDK",
         subtitle: "Open Source Framework",
         description: "Open source framework in Bun for local conversational AI agents or internal agents for secret data. Focused on usability and native Bun performance.",

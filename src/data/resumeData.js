@@ -27,6 +27,14 @@ export const resumeData = {
             type: "work"
         },
         {
+            title: "Kakacomics",
+            role: "Full-Stack Developer",
+            durationLocality: "2026 | Remote",
+            description: "Led critical integrations for a robust Laravel/React platform. Implemented <strong>Google Identity Services (GIS)</strong> for seamless authentication without OAuth redirects, bypassing shared hosting ModSecurity blocks. Developed the full <strong>MercadoPago integration</strong> for payment processing and subscription management, including role-based ad visibility and an admin dashboard. Additionally, I achieved <strong>100% test coverage</strong> for the entire authentication and user management flow.",
+            technologies: "Laravel, PHP, React, TypeScript, MercadoPago API, Google Identity Services, PHPUnit",
+            type: "work"
+        },
+        {
             title: "Nouva Company Ltda",
             role: "Software Engineer",
             durationLocality: "2026 | Remote",
@@ -67,7 +75,7 @@ export const resumeData = {
     ],
     technologies: [
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
-        { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
+        { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "PHP", "Laravel", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
         { category: "Databases", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Supabase", "Firebase", "PGVector", "Elastic Search"] },
         { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "AI Ecosystem", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
@@ -101,6 +109,14 @@ export const resumeDataPt = {
             durationLocality: "2025 - | Camaçari - BA",
             description: "Engenhei agentes de IA escaláveis integrados com bancos de dados vetoriais (PGVector) e Elasticsearch, automatizando fluxos de trabalho internos e <strong>reduzindo o tempo de busca de documentação em 60%</strong>. Conduzi com sucesso uma migração de arquitetura do LangChain para <strong>LlamaIndex</strong> para otimizar o sistema de IA. Adicionalmente, desenvolvi um agente de IA especializado utilizando <strong>Databricks</strong> e <strong>LangChain</strong> para auxiliar no treinamento de times de diretoria. Este agente utiliza RAG, acessando papers internos, transcrições de reuniões, conversas do Microsoft Teams e arquivos pessoais do OneDrive do usuário para contextualização profunda. Também desenvolvi uma aplicação full-stack de caronas corporativas focada na <strong>redução de custos para os trabalhadores</strong>, permitindo que dividam o custo da viagem em partes iguais, além de <strong>aumentar significativamente o conforto</strong> no trajeto entre diferentes cidades.",
             technologies: "Prisma, NestJS, React, Google Cloud, Tekton, Terraform, LlamaIndex, LangChain/LangGraph, PGVector, Elastic Search, PostgreSQL, Databricks",
+            type: "work"
+        },
+        {
+            title: "Kakacomics",
+            role: "Desenvolvedor Full-Stack",
+            durationLocality: "2026 | Remoto",
+            description: "Liderei integrações críticas para uma robusta plataforma Laravel/React. Implementei autenticação via <strong>Google Identity Services (GIS)</strong> sem redirecionamentos OAuth, contornando bloqueios do ModSecurity em hospedagem compartilhada. Desenvolvi toda a <strong>integração com o MercadoPago</strong> para processamento de pagamentos e gestão de assinaturas, incluindo controle de anúncios baseado em planos e painel administrativo. Além disso, alcancei <strong>100% de cobertura de testes</strong> para todo o fluxo de autenticação e gestão de usuários.",
+            technologies: "Laravel, PHP, React, TypeScript, MercadoPago API, Google Identity Services, PHPUnit",
             type: "work"
         },
         {
@@ -144,7 +160,7 @@ export const resumeDataPt = {
     ],
     technologies: [
         { category: "Frontend", items: ["HTML/CSS", "React", "Next.js", "Angular", "Vite", "TailwindCSS", "Figma"] },
-        { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
+        { category: "Backend", items: ["Node.js", "Bun", "TypeScript", "Python", "PHP", "Laravel", "NestJS", "FastAPI", "ElysiaJS", "Discord.py"] },
         { category: "Bancos de Dados", items: ["PostgreSQL", "MySQL", "SQLite", "Prisma", "Supabase", "Firebase", "PGVector", "Elastic Search"] },
         { category: "Cloud & DevOps", items: ["AWS", "Google Cloud", "Oracle Cloud", "Hetzner", "Docker", "Nginx", "Tekton", "Terraform", "Databricks"] },
         { category: "Ecossistema de IA", items: ["LangChain", "LangGraph", "LlamaIndex", "Ollama", "HuggingFace", "OpenRouter", "Gemini API", "ElevenLabs API"] },
